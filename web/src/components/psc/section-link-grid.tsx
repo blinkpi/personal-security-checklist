@@ -7,6 +7,8 @@ import styles from './psc.module.css';
 
 export default component$((props: { sections: Section[] }) => {
 
+  console.log(JSON.stringify(props, null, 2)); // ../../personal-security-checklist.yml
+  console.log('props', props, 'typeof props', typeof props, props.sections.length);
   // Create signals to store the number of items done or ignored per section
   const completions =  useSignal<number[]>();
   const done =  useSignal<number[]>();
@@ -40,6 +42,7 @@ export default component$((props: { sections: Section[] }) => {
     ));
   }));
 
+  console.log('props.sections', props.sections, typeof props.sections, props.sections.length);
   return (
     <div class={[styles.container, 'grid',
       'mx-auto mt-8 px-4 gap-7', 'xl:px-10 xl:max-w-7xl',
