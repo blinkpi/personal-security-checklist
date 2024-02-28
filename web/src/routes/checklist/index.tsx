@@ -11,6 +11,7 @@ export default component$(() => {
 
   const [completed, setCompleted] = useLocalStorage('PSC_PROGRESS', {});
 
+  console.count('rendering checklist');
   return (
     <main class="p-8">
       <div class="join join-vertical w-full">

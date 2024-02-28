@@ -7,7 +7,7 @@ import styles from './psc.module.css';
 
 export default component$((props: { sections: Section[] }) => {
 
-  console.log(JSON.stringify(props, null, 2)); // ../../personal-security-checklist.yml
+  console.log('pretty--print props\n', JSON.stringify(props, null, 2)); // ../../personal-security-checklist.yml
   console.log('props', props, 'typeof props', typeof props, props.sections.length);
   // Create signals to store the number of items done or ignored per section
   const completions =  useSignal<number[]>();

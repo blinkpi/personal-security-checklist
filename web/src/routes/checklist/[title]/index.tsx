@@ -21,6 +21,7 @@ export default component$(() => {
     return marked.parse(text || '', { async: false }) as string || '';
   };
   
+  console.count('rendering checklist title article');
   return (
     <div class="md:my-8 md:px-16 sm:px-2 rounded-md">
     <article class="bg-back p-8 mx-auto w-full max-w-[1200px] rounded-lg shadow-md">
