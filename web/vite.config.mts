@@ -2,7 +2,7 @@ import { defineConfig, type UserConfig } from "vite";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-import { viteStaticCopy } from 'vite-plugin-static-copy'
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig((): UserConfig => {
   return {
