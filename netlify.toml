@@ -2,7 +2,7 @@
 [build]
   base = "web/"
   publish = "web/dist/"
-  command = "yarn build && yarn build.static"
+  command = "npm run build && npm run build.static"
 
 [[redirects]]
   from = "/checklist/*"

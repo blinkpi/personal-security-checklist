@@ -1,6 +1,5 @@
 {
   "license": "MIT",
-  "packageManager": "yarn@3.6.4",
   "scripts": {
     "build": "qwik build",
     "build.client": "vite build",
